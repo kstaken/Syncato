@@ -1,0 +1,16 @@
+- Add trackback support (done for 0.7)
+- Add spam blocking on comments (done for 0.7)
+- Finish refactoring XSL to make the system more upgradable (done for 0.7)
+- Add comment API support
+- Add comment management tools (done for 0.7)
+- Finish the metaweblog API
+- Add better error handling
+- Add support for namespaces
+- Make system UTF-8 compliant
+- Add email notification for comment posting
+- Add last-modified and etag support
+- Add checkpoint thread for DB XML
+- Figure out what is still leaking memory.
+- Generalize index configuration for DB XML
+- Add auto trackback when a new post is added.
+- Add comment RSS feeds (one for all comments and per post feeds)

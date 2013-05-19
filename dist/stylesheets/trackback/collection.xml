@@ -1,0 +1,8 @@
+<collection>
+    <title>Trackbacks</title>
+    <query>/trackback</query>
+    <field title="Linking Site" type="link">url</field>
+    <field title="Summary" type="id-summary-link" style="trackback/editor">excerpt</field>    
+    <field title="Posted" type="date">pubDate</field>
+</collection>
+

@@ -1,0 +1,77 @@
+<h1>Writing text
+</h1><p>There's only one rule you need to know about the <a href="RhizML">RhizML</a> text formatting rules: don't start a line with space or a tab!  Indented lines create markup and follow the <a href="MarkupFormattingRules">Markup Formatting Rules</a>. Otherwise, just write normal text, and then use an empty line to mark a paragraph.
+It's just like writing an email.
+</p><p>You can always <a href="?action=edit">Edit</a> this page (use the link at the bottom of this page) to see how the different formatting on this page is used.
+</p><h1>Hyperlinks
+</h1><p>You can create links to internal or external web pages by putting the name in brackets. External links must be a complete URL, while internal pages just need to be the name of page. For example, to point at the java.sun.com home page, use [http://java.sun.com], which becomes <a href="http://java.sun.com/">http://java.sun.com/</a> or [Java home page|http://java.sun.com], which becomes <a href="http://java.sun.com">Java home page</a>, while this page can be linked to like this: [text formatting rules]: <a href="TextFormattingRules">text formatting rules</a>.
+</p><p>To add a new page you just create a link to it from somewhere else. After all, there isn't much point in having a page if you can't access it! You'll then see a small question mark after the page name when you return to that page. Then click on it and you have created a new page!
+</p><p>If you want to use brackets in regular text start with two instead one, like this: [[sic], to avoid creating a link.
+</p><h1>Adding pictures
+</h1><p>If you create a link to an image it will be automatically inlined. For example, this is an inlined PNG image: <img src="http://www.ecyrd.com/~jalkanen/test.png" alt="http://www.ecyrd.com/~jalkanen/test.png" />. If you specify link text ([this one here|http://example.com/example.png]) it becomes
+the ALT text for those who either can't or don't want to view images. 
+If you don't want the image to be inlined, used this link annotation:
+[wiki:xlink-replace: http://www.ecyrd.com/~jalkanen/test.png]:
+</p><p><a href="http://www.ecyrd.com/~jalkanen/test.png" rel="wiki:xlink-replace">not inlined</a> (Link annotation is an advanced feature that is not documented yet -- sorry.)
+</p><h1>Footnotes
+</h1><p>These are a special kind of hyperlink.  By using nothing but a number inside
+a hyperlink you create a reference to a footnote, like this [1], which 
+creates a footnote<a href="#1">[1]</a>.  To make the actual footnote, you just put a [#1]
+where you want that footnote to point at.  Look below to find the footnote.
+</p><p>You can also make a named footnote, just as if you were doing a normal hyperlink.  For example, this refers to the same footnote<a href="#1">[Footnote number 1]</a> as the footnote above, but this refers to another footnote<a href="#2">[2]</a>.
+</p><h1>Bulleted lists
+</h1><p>Use an asterisk (*) in the first column to make bulleted lists. Use more asterisks for deeper indentation. For example:
+<pre class="code">
+* One
+* Two
+* Three
+** Three.One
+</pre></p><p>creates
+<ul><li> One
+</li><li> Two
+</li><li> Three
+</li><ul><li> Three.One
+</li></ul></ul></p><h1>Numbered lists
+</h1><p>Just like with bulleted lists, but use a hash (#) instead of the asterisk. Like this:
+</p><pre class='code'>
+# One
+# Two
+# Three
+## Three.One
+</pre><p>creates
+<ol><li> One
+</li><li> Two
+</li><li> Three
+</li><ol><li> Three.One
+</li></ol></ol></p><p>If you want to write the list item on multiple lines, add a '\\' at the end of the line. If this sounds complicated, edit this page for an example, below.
+</p><ul><li> This is a single-line item.
+</li><li> This is actually a multi-line item. We continue the second sentence on a line on a line of its own. We might as well do a third line while we're at it... Notice, however, as all these sentences get put inside a single item!
+</li><li> The third line is again a single-line item for your convinience.
+</li></ul><h1>Indentation and Definition lists
+</h1><p>A simple way to make definition lists is to use the ';:' -construct:
+</p><dl><dt><strong>Construct</strong></dt><dd>''Something you use to do something with''
+</dd></dl><dl><dd> Starting with a ':' causes text to be indented like this (useful because remember, you can't start lines with spaces or tabs!).
+</dd><dl><dd> Multiple colons create greater indentation, like the '::' used here.
+</dd></dl></dl><h1>Text effects
+</h1><p>You may use <strong>bold</strong> text or <em>italic</em> text, by placing two underscores (__) (for bold) or two slashes (//) (for italics) before and after the text. You can create <tt>monospaced</tt> text using ^^.
+</p><h1>Headings 
+</h1><p>Start a line with an exclamation mark (!) to make a heading. 
+<h2>Sub-headings
+</h2></p><p>!! makes a sub-heading, !!! a sub-sub-heading, etc. (up to 6 !s).
+</p><h1>Preformatted text
+</h1><p>If you want to add a block of unformatted text that doesn't follow any of these rules, for now you must create markup text -- see <a href="MarkupFormattingRules">Markup Formatting Rules</a> or edit this page for an example.
+</p><h1>Tables
+</h1><p>You can do simple tables by using using pipe signs ('|').  Use double pipe
+signs to start the heading of a table, and single pipe signs to then
+write the rows of the table.  End with a line that is not a table.
+</p><p>For example:
+</p><pre class='code'>
+|| Heading 1 || Heading 2
+| ''Gobble'' | Bar
+| [Cocoon home|http://cocoon.apache.org/]     | [SandBox]
+</pre><p>gives you the following table.  Note how you can use links also inside tables.
+</p><table><tr><th> Heading 1 </th><th> Heading 2
+</th></tr><tr><td> ''Gobble'' </td><td> Bar
+</td></tr><tr><td> <a href="http://cocoon.apache.org/">Cocoon home</a>     </td><td> <a href="SandBox">SandBox</a>
+</td></tr></table><hr /><p><a class="footnote" name="1">[1]</a> Here's the footnote I mentioned.
+</p><p><a class="footnote" name="2">[The other footnote]</a> The other footnote.  Note how it's name is different?
+</p>

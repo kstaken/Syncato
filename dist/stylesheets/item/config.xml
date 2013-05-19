@@ -1,0 +1,18 @@
+<datatype root="item">
+    <admin-create>yes</admin-create>
+    
+    <trigger>
+        <on>insert</on>
+        <action name="send-pings"/>
+    </trigger>
+    
+    <index> 
+        <node-name>item</node-name> 
+        <type>node-element-presence-none</type>
+    </index>
+    
+    <!--index>
+        <node-name>postID</node-name>
+        <type>node-attribute-equality-number</type>
+    </index-->
+</datatype>

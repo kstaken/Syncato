@@ -1,0 +1,8 @@
+<collection>
+    <title>Pages</title>
+    <query>/page</query>
+    <field title="Page Title" type="link">title</field>
+    <field title="Body Summary" type="id-summary-link" style="page/editor">body</field>    
+    <field title="Created" type="date">pubDate</field>
+</collection>
+

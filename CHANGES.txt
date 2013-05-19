@@ -1,0 +1,86 @@
+0.8
+
+- Removed the ability to return plain text from queries when there were no XML
+    nodes in the result. This was done to make the return type more consistent.
+    Previously you could get either text or XML for a query result which was 
+    inconsistent.
+- Added the ability to run triggers based on actions in the database.
+- Substantially refactored the administration interface to make it more general.
+- Added the concept of datatypes to the system. Datatypes alow you to have more
+    control over how certain types of content are handled in the system. The 
+    system is still completely open, but this provides the ability to build out
+    better tools.
+- Moved all unit tests into a new directory to make it easier to run the full
+    suite.
+- Replaced PathUpdate with XMLFragment and converted everything to use that 
+    instead of using raw libxml2 parser calls. 
+    Using XMLFragment allows automatic freeing of document contexts which helps 
+    prevent memory leaks. 
+- Updated the XMLFragment update API to support namespaces.
+- Expanded DbXslExtension to support full database operations from within XSL.
+    Previously it could just do queries.
+- Standard data types have been refactored to use the new datatype system.
+- Fixed some encoding problems, hopefully system will properly support UTF-8 
+    now. Might still be some minor problems.
+    
+0.7
+
+- Added trackback support
+- Added trackback autodiscovery on post pages
+- Added remote-xpath-query and remote-content include tags that allow you to 
+    include remote XML content into your posts.
+- Greatly improved the HTML admin interface.
+- Added comment and trackback spam URL blacklist support
+- Refactored the stylesheet locations to separate system and user stylesheets.
+    All stylesheets in dist/stylesheets are intended to be updated any time a 
+    new version is released. User customizations can be made by overriding any 
+    of the templates from the stylesheets in that directory. User styles are 
+    stored in the top level syncato stylesheet directory.
+- Reworked the URL scheme to add the ability to use post titles to provide 
+    more descriptive URLs.
+- Changed output from XSL process to generate XML instead of outputing HTML.
+- Added a new URL parameter c to enable content queries. These are XPath queries
+    run on rendered content. This allows you to extract fragments from the 
+    HTML result.
+- Added configuration options to turn url xpath queries and content queries off.
+- Changed summarize function of WeblogXslExtension to no longer require sgmllib.
+- Fixed summarize so that it expands embedded tags prior to doing the summary.
+- Lots of cleanup to simplify the XSL files.
+- Added additional indexes to the DB XML backend. This tuning provides a 
+    substantial improvement in performance when running the latest version of
+    DB XML.
+- Renamed the root element on category definitions from category to 
+    category-def. This was done to take better advantage of the indexing 
+    facilities of DB XML. There's a script update.py that will update an 
+    existing site.
+
+0.6
+
+- Added comment support.
+- Moved weblog pings into a separate thread.
+- Made pings generic so that any site that supports the weblogs.com interface
+    can pe pinged.
+- Added technorati pings to the default configuration.    
+- Added a very rudimentary HTML administration interface. 
+    (Just add and edit entries)   
+- Added the PathUpdate API to enable document contruction and modification 
+    using XPath to select nodes.
+- Added category RSS feeds
+- Added a file based database to make the software easier to get up and running.
+- The file based database is the default out of the box.
+- Began rearranging the XSL files to start separating user styles from 
+    system styles.
+- Initial Blogger and Metaweblog API implementations. (thanks Darryl VanDorp)
+- Changed the command line scripts to use the web interface instead of accessing
+    the database directly.
+- Switched categories to key off of title instead of id.    
+- Substantial improvements in the stability of the Berkeley DB XML backend.
+- Changed the directory structure for servlets. There are now three types based
+    on access restrictions. 
+        open: open for all requests 
+        restricted: restricts POST, PUT and DELETE
+        closed: restricts all HTTP methods
+         
+0.5
+
+Initial public release.

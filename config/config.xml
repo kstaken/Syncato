@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<blog>
+    <!--
+    The system HTTP URL this is the base inder which everything else can be 
+    found. 
+    
+    TODO: The other URLs need to be refactored to be taken relative to this one.
+    -->
+    <system-url>http://192.168.0.5/WK/</system-url>
+    
+    <!--
+    The base HTTP URL to the blog system.
+    -->
+    <base-url>http://ksbook.local/WK/blog</base-url>
+    
+    <!--
+    URL for the HTML administration interface.
+    -->
+    <admin-url>http://ksbook.local/WK/admin</admin-url>
+    
+    <!--
+    Base URL where static web content is found. This is for images, CSS files
+    and such,
+    -->
+    <content-url>http://ksbook.local/~kstaken/</content-url>
+    
+    <title>Inspirational Technology</title>
+    <description>Exploring creative use of technology</description>
+    <webmaster>kstaken@xmldatabases.org</webmaster>
+    <content-owner>Kimbro Staken</content-owner>
+    <copyright>2002, 2003</copyright>
+    <language>en-us</language>
+    
+    <!-- 
+    Type of database that should be used, current options are dbxml to use
+    Berkeley DB XML and file to use a file system based database.
+    -->
+    <db-type>dbxml2</db-type>
+    
+    <!-- 
+    The location of the database enviroment to use for all data.
+    -->
+    <!--db-location>../data/blog-data</db-location-->
+    <db-location>../data/blog-data</db-location>
+    
+    <!--
+    The location where the cached files will be written
+    -->
+    <cache-location>../data/cache</cache-location>
+    
+    <!-- 
+    Location of the user customizable XSL stylesheets
+    -->
+    <user-style-location>../stylesheets</user-style-location>   
+   
+    <!-- 
+    Location of the system default XSL stylesheets
+    -->
+    <system-style-location>../dist/stylesheets</system-style-location>    
+    
+    <!--
+    When a root URL request is made this style will be used unless a different
+    one is specified as part of the URL
+    -->
+    <style-default>front-page</style-default>
+    
+    <preferred-rss>rss20</preferred-rss>
+    
+    <css-style>syncato.css</css-style>
+    
+    <!-- 
+    this is the name of the root element for weblog posts. The system doesn't
+    particularly care about the structure of the content inserted into the 
+    database so you can use whatever structure you want as long as you define
+    what the root is. -->
+    <post-root-element>item</post-root-element>
+    
+    <!-- 
+    Similar to post-root-element but for category entries. At the current time 
+    this is not fully implemented.
+    -->
+    <category-root-element>category-def</category-root-element>
+    
+    <!-- 
+    If set to yes pings weblogs.com and glo.gs everytime a post is 
+    added.
+    -->
+    <ping-weblogs>no</ping-weblogs>
+    
+    <!-- 
+    URLs that will be pinged. These must point to URLs that support the 
+    weblogs.com ping interface. 
+    -->
+    <ping-target>http://rpc.weblogs.com/RPC2</ping-target>
+    <ping-target>http://ping.blo.gs/</ping-target>
+    <ping-target>http://rpc.technorati.com/rpc/ping</ping-target>
+    
+    <!--
+    If set to yes will cache the request results for future use.
+    -->
+    <cache-results>no</cache-results>
+    
+    <!-- 
+    Turns thr XPath in the URL feature on or off. Set to yes to turn it on.
+    -->
+    <enable-url-queries>yes</enable-url-queries>
+    
+    <!-- 
+    Turns content queries on or off. Content queries are queries applied to the
+    normal output result to extract just a fragment of the result. They come 
+    through the URL as the c parameter.
+    -->
+    <enable-content-queries>yes</enable-content-queries>
+    
+    <!-- 
+    Namespaces are defined to prime the query engine so that it knows how to map
+    prefixes in XPath queries. If you want to include namespaces in your XPath
+    queries you have to define them here. You can add as many namespace entries 
+    as necessary.
+    -->
+    <namespace prefix="syncato">http://www.syncato.com/NS/syncato</namespace>
+    
+    <!-- How many days worth of items to show on the frontpage -->
+    <frontpage-term>7</frontpage-term>
+    
+    <!-- 
+    If set to yes use-blacklist will turn on blacklist checking for comments to
+    reduce the occurance of comment spam.
+    -->
+    <use-blacklist>yes</use-blacklist>
+    
+    <!-- 
+    The error message that is displayed when a comment is posted that contains
+    a URL that is on the blacklist. This is used to prevent comment spam.
+    
+    The %s will be substituted for the URL that was denied. If you change this
+    message make sure you include a %s in it.
+    -->
+    <blacklist-message>The URL %s is considered an unacceptable link by this site.</blacklist-message>
+    
+    <!-- 
+    If you have accounts for these you can set your ids to make including 
+    ads simpler. 
+    
+    Note: If you want to help out development of this software you can leave 
+    these alone and keep the ads on your page somewhere.
+    -->
+    <google-ad-id>pub-4744886736954911</google-ad-id>
+    <amazon-associates-id>inspiration08-20</amazon-associates-id>
+</blog>

@@ -1,0 +1,6 @@
+<collection>
+    <title>Spam Blacklist</title>
+    <query>/blacklist</query>
+    <field title="URL">url</field>
+    <field title="Added" type="date">pubDate</field>
+</collection>

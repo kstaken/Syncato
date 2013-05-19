@@ -1,0 +1,6 @@
+<collection>
+    <title>Posts</title>
+    <query>/item</query>
+    <field title="Title" type="id-link" style="item/editor">title</field>
+    <field title="Posted" type="date">pubDate</field>
+</collection>

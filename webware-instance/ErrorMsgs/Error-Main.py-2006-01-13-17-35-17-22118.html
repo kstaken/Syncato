@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>Error</title>
+<style type="text/css">
+<!--
+body {
+	color: #080810;
+	background-color: white;
+	font-size: 11pt;
+	font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+	margin: 0pt;
+	padding: 8pt;
+}
+h2 { font-size: 14pt; }
+-->
+</style>
+</head>
+<body text="black" bgcolor="white">
+<h2 style="text-align:center;color:white;background-color:#993333">Error</h2>
+<p>The site is having technical difficulties with this page. An error has been logged, and the problem will be fixed as soon as possible. Sorry!</p>
+<h2 style="text-align:center;color:white;background-color:#993333">Traceback</h2>
+<p><i>../src/servlets/restricted/Main.py</i></p><table style="background-color:#F0F0F0" width=100% cellpadding="2" cellspacing="2">
+<tr><td><pre style="color:#000000">
+Traceback (most recent call last):
+<span style="color:#000099">  File &quot;./WebKit/Application.py&quot;, line 466, in dispatchRawRequest</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/./WebKit/Application.py&line=466">[edit]</a>
+<span style="color:#990000"></span><span style="color:#000099">  File &quot;./WebKit/Application.py&quot;, line 529, in runTransaction</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/./WebKit/Application.py&line=529">[edit]</a>
+<span style="color:#990000"></span><span style="color:#000099">  File &quot;./WebKit/Application.py&quot;, line 553, in runTransactionViaServlet</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/./WebKit/Application.py&line=553">[edit]</a>
+<span style="color:#990000"></span><span style="color:#000099">  File &quot;./WebKit/Servlet.py&quot;, line 59, in runTransaction</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/./WebKit/Servlet.py&line=59">[edit]</a>
+<span style="color:#990000"></span><span style="color:#000099">  File &quot;./WebKit/Transaction.py&quot;, line 136, in respond</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/./WebKit/Transaction.py&line=136">[edit]</a>
+<span style="color:#990000"></span><span style="color:#000099">  File &quot;./WebKit/HTTPServlet.py&quot;, line 67, in respond</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/./WebKit/HTTPServlet.py&line=67">[edit]</a>
+<span style="color:#990000"></span><span style="color:#000099">  File &quot;../dist/servlets/restricted/Main.py&quot;, line 32, in respondToGet</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/../dist/servlets/restricted/Main.py&line=32">[edit]</a>
+<span style="color:#990000"></span><span style="color:#000099">  File &quot;../dist/servlets/restricted/Main.py&quot;, line 48, in process</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/../dist/servlets/restricted/Main.py&line=48">[edit]</a>
+<span style="color:#990000"></span><span style="color:#000099">  File &quot;../src/lib/Router.py&quot;, line 125, in processRequest</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/../src/lib/Router.py&line=125">[edit]</a>
+<span style="color:#990000">    (site, executable) = self._verifyRoute(context)</span>
+<span style="color:#000099">  File &quot;../src/lib/Router.py&quot;, line 94, in _verifyRoute</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/../src/lib/Router.py&line=94">[edit]</a>
+<span style="color:#990000">    site = Framework.Framework().getSite(context['site'])</span>
+<span style="color:#000099">  File &quot;../dist/scripts/lib/Framework.py&quot;, line 40, in getSite</span> <a href="/Admin/EditFile?filename=/Users/kstaken/Workspace/Syncato/syncato/webware-instance/../dist/scripts/lib/Framework.py&line=40">[edit]</a>
+<span style="color:#990000">    SIOUX_APPLEMENU_ID=32000</span>
+KeyError: 'favicon.ico'</pre></td></tr>
+</table>
+<h2 style="text-align:center;color:white;background-color:#993333">MiscInfo</h2>
+<table width="100%" border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt"><tr><td style="background-color:#F0F0F0">filename</td><td style="background-color:#F0F0F0">../src/servlets/restricted/Main.py &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">os.getcwd()</td><td style="background-color:#F0F0F0">/Users/kstaken/Workspace/Syncato/syncato/webware-instance &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">sys.path</td><td style="background-color:#F0F0F0">['../src/components/weblog/controller/', '../../site//components/weblog/controller/', '../src/components/weblog/controller/', '../../site//components/weblog/controller/', '../Webware-0.9', '/Users/kstaken/Workspace/Syncato/syncato/webware-instance', '/usr/local/lib/python2.2/site-packages', '/Users/kstaken/Workspace/Syncato/syncato/webware-instance', '/Users/kstaken/build/omni/lib/python', '/Users/kstaken/build/omni/lib/i586_linux_2.0_glibc2.1', '/Users/kstaken/Workspace/Syncato2/Binaries/lib/py... &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">sys.version</td><td style="background-color:#F0F0F0">2.4.2 (#1, Oct  6 2005, 13:01:41) 
+[GCC 4.0.0 20041026 (Apple Computer, Inc. build 4061)] &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">time</td><td style="background-color:#F0F0F0">Fri Jan 13 17:35:17 2006 &nbsp;</td></tr>
+</table>
+<h2 style="text-align:center;color:white;background-color:#993333">Transaction</h2>
+<table border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt">
+<tr>
+<td style="background-color:#F0F0F0;font-weight:bold">attr</td>
+<td style="background-color:#F0F0F0;font-weight:bold">value</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">application</td>
+<td style="background-color:#F0F0F0">&lt;WebKit.Application.Application object at 0x455690&gt;</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">request</td>
+<td style="background-color:#F0F0F0">&lt;WebKit.HTTPRequest.HTTPRequest object at 0x1044910&gt;</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">response</td>
+<td style="background-color:#F0F0F0">&lt;WebKit.HTTPResponse.HTTPResponse object at 0x1048ad0&gt;</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">session</td>
+<td style="background-color:#F0F0F0">None</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">servlet</td>
+<td style="background-color:#F0F0F0">&lt;default.Main.Main object at 0x10489d0&gt;</td>
+</tr>
+</table>
+<h2 style="text-align:center;color:white;background-color:#993333">HTTPRequest</h2>
+<table border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt">
+<tr>
+<td style="background-color:#F0F0F0;font-weight:bold">attr</td>
+<td style="background-color:#F0F0F0;font-weight:bold">value</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">args</td>
+<td style="background-color:#F0F0F0"><table width="100%" border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt"></table></td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">uri</td>
+<td style="background-color:#F0F0F0">'/favicon.ico'</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">servletPath</td>
+<td style="background-color:#F0F0F0">''</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">serverSidePath</td>
+<td style="background-color:#F0F0F0">'../src/servlets/restricted/Main.py'</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">pathInfo</td>
+<td style="background-color:#F0F0F0">None</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">pathTranslated</td>
+<td style="background-color:#F0F0F0">None</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">queryString</td>
+<td style="background-color:#F0F0F0">''</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">method</td>
+<td style="background-color:#F0F0F0">'GET'</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">sessionId</td>
+<td style="background-color:#F0F0F0">None</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">parents</td>
+<td style="background-color:#F0F0F0">[]</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">fields</td>
+<td style="background-color:#F0F0F0"><table width="100%" border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt"></table></td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">cookies</td>
+<td style="background-color:#F0F0F0"><table width="100%" border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt"><tr><td style="background-color:#F0F0F0">__utma</td><td style="background-color:#F0F0F0">63829557.612438734.1135817326.1137192159.1137196402.13 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">__utmb</td><td style="background-color:#F0F0F0">63829557 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">__utmc</td><td style="background-color:#F0F0F0">63829557 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">__utmz</td><td style="background-color:#F0F0F0">63829557.1135817326.1.1.utmccn=(referral)|utmcsr=192.168.0.100|utmcct=/WK/blog|utmcmd=referral &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">dbx-postmeta</td><td style="background-color:#F0F0F0">grabit=0+,1+,2+,3-,4+,5+,6+&amp;advancedstuff=0-,1-,2- &nbsp;</td></tr>
+</table></td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">environ</td>
+<td style="background-color:#F0F0F0"><table width="100%" border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt"><tr><td style="background-color:#F0F0F0">GATEWAY_INTERFACE</td><td style="background-color:#F0F0F0">CGI/1.1 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">HTTP_ACCEPT</td><td style="background-color:#F0F0F0">*/* &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">HTTP_ACCEPT_ENCODING</td><td style="background-color:#F0F0F0">gzip, deflate &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">HTTP_ACCEPT_LANGUAGE</td><td style="background-color:#F0F0F0">en &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">HTTP_CONNECTION</td><td style="background-color:#F0F0F0">keep-alive &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">HTTP_COOKIE</td><td style="background-color:#F0F0F0">__utmc=63829557; __utmz=63829557.1135817326.1.1.utmccn=(referral)|utmcsr=192.168.0.100|utmcct=/WK/blog|utmcmd=referral; __utmb=63829557; dbx-postmeta=grabit=0+,1+,2+,3-,4+,5+,6+&amp;advancedstuff=0-,1-,2-; __utma=63829557.612438734.1135817326.1137192159.1137196402.13 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">HTTP_HOST</td><td style="background-color:#F0F0F0">ksbook.local:8080 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">HTTP_USER_AGENT</td><td style="background-color:#F0F0F0">Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/417.9 (KHTML, like Gecko) Safari/417.8 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">PATH</td><td style="background-color:#F0F0F0">/Users/kstaken/Applications/Locomotive/Bundles/rails-1.0.0-max.bundle/Contents/Resources/ports/bin:/Users/kstaken/Workspace/Syncato2/Binaries/bin:/Users/kstaken/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/httpd/bin:/home/kstaken/build/apache-forrest-0.3-bin/bin::/Volumes/Home/kstaken/Workspace/build/maven-1.0-rc1/bin:/Users/kstaken/Workspace/build/groovy/groovy-core/target/install/bin:/Users/kstaken/Workspace/build/jython:/usr/local/mysql/bin:/bin:/sbin:/usr/bin:/usr/sbin &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">PATH_INFO</td><td style="background-color:#F0F0F0">/favicon.ico &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">QUERY_STRING</td><td style="background-color:#F0F0F0"> &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">REMOTE_ADDR</td><td style="background-color:#F0F0F0">192.168.0.5 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">REMOTE_PORT</td><td style="background-color:#F0F0F0">57159 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">REQUEST_METHOD</td><td style="background-color:#F0F0F0">GET &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">REQUEST_URI</td><td style="background-color:#F0F0F0">/favicon.ico &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SCRIPT_NAME</td><td style="background-color:#F0F0F0"> &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SERVER_ADDR</td><td style="background-color:#F0F0F0">0.0.0.0 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SERVER_PORT</td><td style="background-color:#F0F0F0">8080 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SERVER_PROTOCOL</td><td style="background-color:#F0F0F0">HTTP/1.0 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SERVER_SOFTWARE</td><td style="background-color:#F0F0F0">Webware/0.9 &nbsp;</td></tr>
+</table></td>
+</tr>
+</table>
+<h2 style="text-align:center;color:white;background-color:#993333">HTTPResponse</h2>
+<table border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt">
+<tr>
+<td style="background-color:#F0F0F0;font-weight:bold">attr</td>
+<td style="background-color:#F0F0F0;font-weight:bold">value</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">args</td>
+<td style="background-color:#F0F0F0"><table width="100%" border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt"></table></td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">endTime</td>
+<td style="background-color:#F0F0F0">1137198917.5261731</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">committed</td>
+<td style="background-color:#F0F0F0">0</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">headers</td>
+<td style="background-color:#F0F0F0"><table width="100%" border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt"><tr><td style="background-color:#F0F0F0">content-type</td><td style="background-color:#F0F0F0">text/html &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">status</td><td style="background-color:#F0F0F0">500 Servlet Error &nbsp;</td></tr>
+</table></td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">cookies</td>
+<td style="background-color:#F0F0F0"><table width="100%" border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt"></table></td>
+</tr>
+</table>
+<p>Uncaught exception while asking <b>servlet</b> to write report:</p>
+<pre>
+Traceback (most recent call last):
+  File "./WebKit/Transaction.py", line 199, in writeExceptionReport
+AttributeError: 'Main' object has no attribute 'writeExceptionReport'
+</pre>
+<h2 style="text-align:center;color:white;background-color:#993333">Environment</h2>
+<table width="100%" border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt"><tr><td style="background-color:#F0F0F0">BASH_ENV</td><td style="background-color:#F0F0F0">/Users/kstaken/.bashrc &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">CLASSPATH</td><td style="background-color:#F0F0F0">:. &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">CVSROOT</td><td style="background-color:#F0F0F0">:ext:kstaken@192.168.0.100:/home/kstaken/repository &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">CVS_RSH</td><td style="background-color:#F0F0F0">ssh &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">DISPLAY</td><td style="background-color:#F0F0F0">localhost:0.0 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">DYLD_LIBRARY_PATH</td><td style="background-color:#F0F0F0">/Users/kstaken/Applications/Locomotive/Bundles/rails-1.0.0-max.bundle/Contents/Resources/ports/lib:/Users/kstaken/Workspace/Syncato2/Binaries/lib/ &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">EDITOR</td><td style="background-color:#F0F0F0">vi &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">FORREST_HOME</td><td style="background-color:#F0F0F0">/home/kstaken/build/apache-forrest-0.3-bin &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">HISTIGNORE</td><td style="background-color:#F0F0F0">[   ]*:&amp;:bg:fg &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">HOME</td><td style="background-color:#F0F0F0">/Users/kstaken &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">JAVA_HOME</td><td style="background-color:#F0F0F0">/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">JDK_HOME</td><td style="background-color:#F0F0F0">/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">LOGNAME</td><td style="background-color:#F0F0F0">kstaken &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">MAIL</td><td style="background-color:#F0F0F0">/var/mail/kstaken &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">MAVEN_HOME</td><td style="background-color:#F0F0F0">/Volumes/Home/kstaken/Workspace/build/maven-1.0-rc1 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">OLDPWD</td><td style="background-color:#F0F0F0">/Users/kstaken/Workspace/Syncato/syncato &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">PATH</td><td style="background-color:#F0F0F0">/Users/kstaken/Applications/Locomotive/Bundles/rails-1.0.0-max.bundle/Contents/Resources/ports/bin:/Users/kstaken/Workspace/Syncato2/Binaries/bin:/Users/kstaken/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/httpd/bin:/home/kstaken/build/apache-forrest-0.3-bin/bin::/Volumes/Home/kstaken/Workspace/build/maven-1.0-rc1/bin:/Users/kstaken/Workspace/build/groovy/groovy-core/target/install/bin:/Users/kstaken/Workspace/build/jython:/usr/local/mysql/bin:/bin:/sbin:/usr/bin:/usr/sbin &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">PWD</td><td style="background-color:#F0F0F0">*** hidden *** &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">PYTHONPATH</td><td style="background-color:#F0F0F0">/usr/local/lib/python2.2/site-packages::/Users/kstaken/build/omni/lib/python:/Users/kstaken/build/omni/lib/i586_linux_2.0_glibc2.1 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">RUBYLIB</td><td style="background-color:#F0F0F0">/Users/kstaken/Applications/Locomotive/Bundles/rails-1.0.0-max.bundle/Contents/Resources/ports/lib/ruby/site_ruby/1.8:/Users/kstaken/Applications/Locomotive/Bundles/rails-1.0.0-max.bundle/Contents/Resources/ports/lib/ruby/site_ruby/1.8/powerpc-darwin7.9.0:/Users/kstaken/Applications/Locomotive/Bundles/rails-1.0.0-max.bundle/Contents/Resources/ports/lib/ruby/1.8:/Users/kstaken/Applications/Locomotive/Bundles/rails-1.0.0-max.bundle/Contents/Resources/ports/lib/ruby/1.8/powerpc-darwin7.9.0 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SHELL</td><td style="background-color:#F0F0F0">/bin/bash &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SHLVL</td><td style="background-color:#F0F0F0">2 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SSH_CLIENT</td><td style="background-color:#F0F0F0">fe80::20a:95ff:fe77:ea3a%en0 56096 22 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SSH_CONNECTION</td><td style="background-color:#F0F0F0">fe80::20a:95ff:fe77:ea3a%en0 56096 fe80::214:51ff:fe19:74b4%en0 22 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">SSH_TTY</td><td style="background-color:#F0F0F0">/dev/ttyp4 &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">TERM</td><td style="background-color:#F0F0F0">xterm-color &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">USER</td><td style="background-color:#F0F0F0">kstaken &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">USERNAME</td><td style="background-color:#F0F0F0"> &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">XML_CATALOG_FILES</td><td style="background-color:#F0F0F0">/Volumes/Home/kstaken/Workspace/dbxml-gsg/docbook-xsl-1.68.1/catalog.xml /etc/xml/catalog &nbsp;</td></tr>
+<tr><td style="background-color:#F0F0F0">_</td><td style="background-color:#F0F0F0">/usr/bin/env &nbsp;</td></tr>
+</table>
+<h2 style="text-align:center;color:white;background-color:#993333">Ids</h2>
+<table border="0" cellpadding="2" cellspacing="2" style="background-color:#FFFFFF;font-size:10pt">
+<tr>
+<td style="background-color:#F0F0F0;font-weight:bold">name</td>
+<td style="background-color:#F0F0F0;font-weight:bold">value</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">getegid</td>
+<td style="background-color:#F0F0F0">501</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">geteuid</td>
+<td style="background-color:#F0F0F0">501</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">getgid</td>
+<td style="background-color:#F0F0F0">501</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">getpgrp</td>
+<td style="background-color:#F0F0F0">1857</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">getpid</td>
+<td style="background-color:#F0F0F0">1858</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">getppid</td>
+<td style="background-color:#F0F0F0">1857</td>
+</tr>
+<tr>
+<td style="background-color:#F0F0F0">getuid</td>
+<td style="background-color:#F0F0F0">501</td>
+</tr>
+</table>
+
+</body>
+</html>

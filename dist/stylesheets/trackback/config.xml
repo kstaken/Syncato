@@ -1,0 +1,40 @@
+<datatype root="trackback">
+    <admin-create>no</admin-create>
+    
+    <relation from-type="item" from-field="@id" to-field="@postID">         
+        <trigger>
+            <on>delete</on>
+            <action name="cascade">
+                <param name="target-root">trackback</param>
+                <param name="target-key">@postID</param>
+                <param name="from-key">@id</param>
+            </action>            
+        </trigger> 
+    </relation>
+    
+    <trigger>
+        <on>insert</on>
+        <action name="increment">
+            <param name="target-path">/item/trackback-count</param>
+            <param name="key-path">/trackback/@postID</param>
+        </action>        
+    </trigger>
+    
+    <trigger>
+        <on>delete</on>
+        <action name="decrement">
+            <param name="target-path">/item/trackback-count</param>
+            <param name="key-path">/trackback/@postID</param>
+        </action>        
+    </trigger>
+    
+    <index> 
+        <node-name>trackback</node-name> 
+        <type>node-element-presence-none</type>
+    </index>
+    
+    <index>
+        <node-name>postID</node-name>
+        <type>node-attribute-equality-number</type>
+    </index>
+</datatype>

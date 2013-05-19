@@ -1,0 +1,8 @@
+<collection>
+    <title>Categories</title>
+    <query>/category-def</query>
+    <field title="Category Title">title</field>
+    <field title="Description" type="id-summary-link" style="category/editor">description</field>    
+    <field title="Posted" type="date">pubDate</field>
+</collection>
+

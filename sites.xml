@@ -1,0 +1,6 @@
+<sites>
+    <site site-base="../../site/" url-base="blog"/>
+    <site site-base="../../default/" url-base="test"/>
+	<site site-base="../../mcdirectory/" url-base="mcd"/>
+	<site site-base="../../bookreviews/" url-base="books"/>
+</sites> 

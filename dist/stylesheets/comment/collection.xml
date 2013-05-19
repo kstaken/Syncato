@@ -1,0 +1,8 @@
+<collection>
+    <title>Comments</title>
+    <query>/comment</query>
+    <field title="Author" type="string">author</field>
+    <field title="Summary" type="id-summary-link" style="comment/editor">body</field>
+    
+    <field title="Posted" type="date">pubDate</field>
+</collection>
